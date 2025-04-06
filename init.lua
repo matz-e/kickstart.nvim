@@ -276,6 +276,23 @@ require('lazy').setup({
     },
   },
 
+  {
+    'vimwiki/vimwiki',
+    config = function()
+      vim.g.vimwiki_list = {
+        {
+          path = '~/Synced Documents/Wiki/data',
+          path_html = '~/Synced Documents/Wiki/html',
+          auto_diary_index = 1,
+        },
+      }
+    end,
+  },
+
+  {
+    'tpope/vim-fugitive',
+  },
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
